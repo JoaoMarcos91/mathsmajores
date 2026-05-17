@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maths Majores is an AI study platform for high-school students preparing for exams.">
+  <title data-i18n="meta.title">Maths Majores - AI study studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Maths Majores">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>Maths Majores</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#studio" data-i18n="nav.studio">Studio</a>
+      <a href="#method" data-i18n="nav.method">Method</a>
+      <a href="#plans" data-i18n="nav.plans">Plans</a>
+    </nav>
+
+    <div class="header-controls">
+      <label class="language-picker">
+        <span data-i18n="nav.language">Language</span>
+        <select id="languageSelect" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="pt">PT</option>
+          <option value="fr">FR</option>
+        </select>
+      </label>
+      <a class="header-cta" href="#join" data-i18n="nav.cta">Join waitlist</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">AI study studio for high-school exams</p>
+        <h1 id="hero-title">
+          <span data-i18n="hero.titleA">Study with an AI that</span>
+          <em data-i18n="hero.titleB">understands your mistakes.</em>
+        </h1>
+        <p class="hero-copy" data-i18n="hero.copy">
+          Maths Majores maps your weak points, remembers your progress, and turns every question into a precise study path.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#join" data-i18n="hero.primary">Start free</a>
+          <a class="button secondary" href="#studio" data-i18n="hero.secondary">See the studio</a>
+        </div>
+      </div>
+
+      <div class="orbit" aria-hidden="true">
+        <div class="orbit-core">
+          <span>∑</span>
+        </div>
+        <i class="node node-a"></i>
+        <i class="node node-b"></i>
+        <i class="node node-c"></i>
+        <i class="node node-d"></i>
+      </div>
+
+      <aside class="diagnostic-card" aria-label="Learning diagnosis preview">
+        <div class="card-header">
+          <span data-i18n="hero.cardLabel">Live diagnosis</span>
+          <strong>87%</strong>
+        </div>
+        <div class="skill-list">
+          <div>
+            <span data-i18n="hero.skillA">Functions</span>
+            <b style="--value: 82%"></b>
+          </div>
+          <div>
+            <span data-i18n="hero.skillB">Stoichiometry</span>
+            <b style="--value: 54%"></b>
+          </div>
+          <div>
+            <span data-i18n="hero.skillC">Essay structure</span>
+            <b style="--value: 71%"></b>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="subject-strip" aria-label="Subjects">
+      <span data-i18n="subjects.math">Mathematics</span>
+      <span data-i18n="subjects.physics">Physics</span>
+      <span data-i18n="subjects.chemistry">Chemistry</span>
+      <span data-i18n="subjects.biology">Biology</span>
+      <span data-i18n="subjects.essay">Essay</span>
+      <span data-i18n="subjects.history">History</span>
+      <span data-i18n="subjects.exams">Exams</span>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="section-kicker" data-i18n="studio.kicker">The study studio</div>
+      <div class="section-head">
+        <h2 id="studio-title" data-i18n="studio.title">Everything your study routine needs, in one focused workspace.</h2>
+        <p data-i18n="studio.copy">
+          Built for students who need clarity: what to study, why it matters, and how to improve before the next exam.
+        </p>
+      </div>
+
+      <div class="studio-grid">
+        <article class="studio-panel large reveal">
+          <span class="panel-number">01</span>
+          <h3 data-i18n="studio.cardA.title">Adaptive memory</h3>
+          <p data-i18n="studio.cardA.copy">The AI remembers recurring mistakes and changes the explanation style as you improve.</p>
+          <div class="memory-map" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </article>
+        <article class="studio-panel reveal">
+          <span class="panel-number">02</span>
+          <h3 data-i18n="studio.cardB.title">Exam precision</h3>
+          <p data-i18n="studio.cardB.copy">Practice follows the frequency and difficulty of your target exams.</p>
+        </article>
+        <article class="studio-panel reveal">
+          <span class="panel-number">03</span>
+          <h3 data-i18n="studio.cardC.title">Zero-shame chat</h3>
+          <p data-i18n="studio.cardC.copy">Ask the same thing ten ways until the answer finally clicks.</p>
+        </article>
+        <article class="studio-panel wide reveal">
+          <span class="panel-number">04</span>
+          <h3 data-i18n="studio.cardD.title">Visible progress</h3>
+          <p data-i18n="studio.cardD.copy">A weekly dashboard shows what changed, what is stuck, and what comes next.</p>
+          <div class="progress-row" aria-hidden="true">
+            <i style="height: 42%"></i>
+            <i style="height: 64%"></i>
+            <i style="height: 52%"></i>
+            <i style="height: 78%"></i>
+            <i style="height: 91%"></i>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div>
+        <div class="section-kicker" data-i18n="method.kicker">Method</div>
+        <h2 id="method-title" data-i18n="method.title">A study cycle that adapts every week.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>1</span>
+          <h3 data-i18n="method.stepA.title">Diagnose</h3>
+          <p data-i18n="method.stepA.copy">Short questions reveal your current level by subject and topic.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>2</span>
+          <h3 data-i18n="method.stepB.title">Explain</h3>
+          <p data-i18n="method.stepB.copy">Lessons become personal, practical, and connected to your mistakes.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>3</span>
+          <h3 data-i18n="method.stepC.title">Practice</h3>
+          <p data-i18n="method.stepC.copy">Exercises are calibrated so they stretch you without wasting time.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>4</span>
+          <h3 data-i18n="method.stepD.title">Adjust</h3>
+          <p data-i18n="method.stepD.copy">Your plan changes automatically as tests, deadlines, and progress change.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <blockquote data-i18n="quote.text">
+        "It feels like having a tutor who knows exactly where I get lost."
+      </blockquote>
+      <p data-i18n="quote.author">Ana Lima, approved student</p>
+    </section>
+
+    <section class="plans" id="plans" aria-labelledby="plans-title">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker" data-i18n="plans.kicker">Plans</div>
+          <h2 id="plans-title" data-i18n="plans.title">Start free. Upgrade when AI becomes your routine.</h2>
+        </div>
+        <p data-i18n="plans.copy">Simple pricing for students and families, with no surprise commitments.</p>
+      </div>
+
+      <div class="plan-grid">
+        <article class="plan reveal">
+          <h3 data-i18n="plans.basic.name">Basic</h3>
+          <div class="price"><span data-i18n="plans.free">Free</span></div>
+          <p data-i18n="plans.basic.copy">For trying the AI and studying a few topics.</p>
+          <ul>
+            <li data-i18n="plans.basic.itemA">5 AI questions monthly</li>
+            <li data-i18n="plans.basic.itemB">2 selected subjects</li>
+            <li data-i18n="plans.basic.itemC">Limited chat history</li>
+          </ul>
+          <a href="#join" class="plan-button" data-i18n="plans.basic.cta">Start</a>
+        </article>
+        <article class="plan featured reveal">
+          <div class="popular" data-i18n="plans.popular">Most popular</div>
+          <h3 data-i18n="plans.plus.name">Plus</h3>
+          <div class="price" data-price="plus">R$20</div>
+          <p data-i18n="plans.plus.copy">For consistent exam preparation.</p>
+          <ul>
+            <li data-i18n="plans.plus.itemA">Unlimited questions</li>
+            <li data-i18n="plans.plus.itemB">All subjects</li>
+            <li data-i18n="plans.plus.itemC">Adaptive schedule</li>
+            <li data-i18n="plans.plus.itemD">Progress dashboard</li>
+          </ul>
+          <a href="#join" class="plan-button" data-i18n="plans.plus.cta">Choose Plus</a>
+        </article>
+        <article class="plan reveal">
+          <h3 data-i18n="plans.pro.name">Pro</h3>
+          <div class="price" data-price="pro">R$59</div>
+          <p data-i18n="plans.pro.copy">For students who want deeper support.</p>
+          <ul>
+            <li data-i18n="plans.pro.itemA">Everything in Plus</li>
+            <li data-i18n="plans.pro.itemB">Family reports</li>
+            <li data-i18n="plans.pro.itemC">Priority support</li>
+            <li data-i18n="plans.pro.itemD">Early access features</li>
+          </ul>
+          <a href="#join" class="plan-button" data-i18n="plans.pro.cta">Choose Pro</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div>
+        <div class="section-kicker" data-i18n="join.kicker">Waitlist</div>
+        <h2 id="join-title" data-i18n="join.title">Reserve your AI study seat.</h2>
+        <p data-i18n="join.copy">Join the waitlist and get 3 free months of Plus at launch.</p>
+      </div>
+      <form class="join-form" id="joinForm" novalidate>
+        <input id="emailInput" type="email" autocomplete="email" required data-i18n-attr="placeholder:join.placeholder;aria-label:join.label" placeholder="your@email.com" aria-label="Email">
+        <button type="submit" data-i18n="join.button">Reserve</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top" aria-label="Maths Majores">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>Maths Majores</span>
+    </a>
+    <div class="footer-links">
+      <a href="#studio" data-i18n="nav.studio">Studio</a>
+      <a href="#method" data-i18n="nav.method">Method</a>
+      <a href="#plans" data-i18n="nav.plans">Plans</a>
+    </div>
+    <span data-i18n="footer.copy">Made for better study habits.</span>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
